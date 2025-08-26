@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:id="@+id/layoutSearchSort"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_search"
+            app:tint="#666" />
+
+        <EditText
+            android:id="@+id/etSearchFlights"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Search flights..."
+            android:background="@android:color/transparent"
+            android:paddingStart="8dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/btnSortFlights"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:tint="@color/flight_btn"
+            android:contentDescription="Sort Flights" />
+    </LinearLayout>
+
+    <!-- Total flights -->
+    <TextView
+        android:id="@+id/tvTotalFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Flights: 0"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_below="@id/layoutSearchSort"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Progress bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/flight_btn" />
+
+    <!-- Flights list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFlights"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvTotalFlights"
+        android:layout_above="@id/fabAddFlight"
+        android:padding="12dp"
+        android:clipToPadding="false" />
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddFlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Add Flight"
+        app:backgroundTint="@color/flight_btn"
+        app:srcCompat="@drawable/ic_add" />
+</RelativeLayout>

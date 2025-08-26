@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_signup"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Flight"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Airline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airline"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="4dp" />
+
+        <Spinner
+            android:id="@+id/spAirline"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_bg"
+            android:paddingHorizontal="12dp"
+            android:spinnerMode="dropdown" />
+
+        <!-- Flight Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight Number"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etFlightNumber"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. AI 302"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="textCapCharacters" />
+
+        <!-- Cities -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure City"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etDepartureCity"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. New Delhi (DEL)"
+            android:background="@drawable/input_bg"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival City"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etArrivalCity"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. Mumbai (BOM)"
+            android:background="@drawable/input_bg"
+            android:padding="12dp" />
+
+        <!-- Date & Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="#CCFFFFFF" />
+
+                <EditText
+                    android:id="@+id/etFlightDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="Select date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_bg"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure Time"
+                    android:textColor="#CCFFFFFF" />
+
+                <EditText
+                    android:id="@+id/etDepartureTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="Select time"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:background="@drawable/input_bg"
+                    android:padding="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Price -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price (₹)"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter price"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="number" />
+
+        <!-- Flight Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/spStatus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_bg"
+            android:paddingHorizontal="12dp"
+            android:spinnerMode="dropdown" />
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAddFlight"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:text="Add Flight"
+            app:backgroundTint="@color/flight_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

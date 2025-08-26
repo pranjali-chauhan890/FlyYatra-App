@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#134E5E"
+    android:fitsSystemWindows="true">
+
+    <!-- Your existing ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Dots layout at bottom center -->
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- TextView with "Next" just left of ImageButton -->
+    <TextView
+        android:id="@+id/nextText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@id/nextButton"
+        android:layout_toStartOf="@id/nextButton"
+        android:layout_marginEnd="0dp"
+        android:gravity="center_vertical"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <!-- ImageButton in bottom-right corner -->
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_next_logo"
+        android:contentDescription="Next"
+        />
+
+</RelativeLayout>

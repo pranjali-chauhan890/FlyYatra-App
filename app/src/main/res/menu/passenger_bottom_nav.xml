@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/passenger_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_book_flight"
+        android:icon="@drawable/ic_book_flight"
+        android:title="Book Flight" />
+
+    <item
+        android:id="@+id/nav_my_trips"
+        android:icon="@drawable/ic_my_trips"
+        android:title="My Trips" />
+
+    <item
+        android:id="@+id/nav_flight_status"
+        android:icon="@drawable/ic_flight_status"
+        android:title="Flight Status" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+
+</menu>

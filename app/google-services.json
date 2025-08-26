@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "947001207171",
+    "firebase_url": "https://flyyatra-4a170-default-rtdb.firebaseio.com",
+    "project_id": "flyyatra-4a170",
+    "storage_bucket": "flyyatra-4a170.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947001207171:android:8533b4101f4ade74e6aeb6",
+        "android_client_info": {
+          "package_name": "com.v2v.flyyatra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT_1gEytW65OAv8l5pyMGcfVEyVwW7eOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

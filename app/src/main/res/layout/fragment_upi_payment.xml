@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@drawable/bg_gradient_payment">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPI Payment"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingBottom="24dp" />
+
+    <!-- UPI Input with Logo -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_bg">
+
+        <!-- UPI Logo -->
+        <ImageView
+            android:id="@+id/ivUpiLogo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_upi"
+            android:contentDescription="UPI Logo" />
+
+        <!-- EditText -->
+        <EditText
+            android:id="@+id/etUpiId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ivUpiLogo"
+            android:background="@android:color/transparent"
+            android:hint="Enter UPI ID (e.g. name@upi)"
+
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/btnPayUpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/btnCancelUpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="@drawable/bg_button_outline"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:elevation="2dp" />
+
+</LinearLayout>

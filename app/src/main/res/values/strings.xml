@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FlyYatra</string>
+
+    <!-- User Types -->
+    <string-array name="user_types">
+        <item>Passenger</item>
+        <item>Admin</item>
+    </string-array>
+
+    <!-- Placeholders -->
+    <string name="placeholder_airline">Airline</string>
+    <string name="placeholder_flight">Flight</string>
+
+    <!-- Formats -->
+    <string name="flight_info_format">%1$s • %2$s → %3$s</string>
+    <string name="date_time_format">%1$s %2$s</string>
+    <string name="price_money">₹%1$.0f</string>
+
+    <!-- Trip Details -->
+    <string name="trip_details_title">Trip Details</string>
+    <string name="trip_details_message">
+        Airline: %1$s\n
+        Flight No: %2$s\n
+        Route: %3$s → %4$s\n
+        Date: %5$s\n
+        Time: %6$s\n
+        Price: ₹%7$.0f\n
+        Status: %8$s
+    </string>
+
+    <!-- Cancel Booking -->
+    <string name="cancel_booking_title">Cancel Booking</string>
+    <string name="cancel_booking_message">Are you sure you want to cancel this trip?</string>
+    <string name="booking_cancelled_toast">Booking cancelled</string>
+
+    <!-- Delete Booking -->
+    <string name="delete_booking_title">Delete Booking</string>
+    <string name="delete_booking_message">Delete this booking permanently?</string>
+    <string name="booking_deleted_toast">Booking deleted</string>
+
+    <!-- Generic Error -->
+    <string name="action_failed_toast">Failed: %1$s</string>
+</resources>

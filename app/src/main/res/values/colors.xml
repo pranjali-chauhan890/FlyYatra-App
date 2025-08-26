@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="flight_btn">#FF5722</color>
+    <color name="login_btn">#3F51B5</color>
+    <color name="nav_selected">#FF9800</color>
+    <color name="nav_unselected">#B3FFFFFF</color>
+    <color name="grey">#5D5C5C</color>
+    <color name="light_grey">#E0DBDB</color>
+    <color name="purple_500">#3F51B5</color>
+</resources>
